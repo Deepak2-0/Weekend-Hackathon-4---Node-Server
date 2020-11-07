@@ -7,14 +7,14 @@ function handleServer(req, res) {
   if(req.url==="/welcome"){
     //res.writeHead(200,"Welcome to Dominos!");
 	res.writeHead(200);
-	res.write("Welcome to Dominos!");
+	res.write(JSON.stringify("Welcome to Dominos!"));
     res.end();
   }
 
   else if(req.url === "/contact"){
     //res.writeHead(200,"{phone: '18602100000',email: 'guestcaredominos@jublfood.com'}");
 	res.writeHead(200);
-	res.write("{phone: '18602100000',email: 'guestcaredominos@jublfood.com'}");
+	res.write(JSON.stringify("{phone: '18602100000',email: 'guestcaredominos@jublfood.com'}"));
     res.end();
   }
 
