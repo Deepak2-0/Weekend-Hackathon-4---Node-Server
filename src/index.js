@@ -18,7 +18,7 @@ function handleServer(req, res) {
 	}
 
   else{
-    res.writeHead(404," 404 not found");
+    res.statusCode = 404;
 	res.write("404 Not Found");
     res.end();
   }
